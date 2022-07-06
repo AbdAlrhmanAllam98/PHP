@@ -25,8 +25,10 @@
     
     - strip_tags(String[Required], Allowed[Optional]) =>prevent show of tags if i want to show some of tags put them in second parameter
         echo strip_tags("<h3>Hello <b>Elzero</b></h3>", "<h3>,<b>");
-    - nl2br(String[Required], XHTML[Optional])=>[newline to br] replace \n by newline,XHTML for self closing tag if it true (default) [<br>Allam</br>]
-        echo nl2br("Elzero\nWeb\nSchool", false);  -> no self closing tag [Elzero<br>......]
+    - nl2br(String[Required], XHTML[Optional])=>[newline to br] replace [\n or actually newline] by newline
+        Reason for use it is server side if i put the value in more than line it will show them to me in one line
+        XHTML for self closing tag if it true (default) [<br>Allam</br>]
+            echo nl2br("Elzero\nWeb\nSchool", false);  -> no self closing tag [Elzero<br>......]
     
     - strpos(String[Required], Value[Required], Start Position[Optional]) Case-Sensitive  ->first value
     - strrpos(String[Required], Value[Required], Start Position[Optional]) Case-Sensitive ->last value

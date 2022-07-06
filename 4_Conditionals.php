@@ -12,6 +12,14 @@ elseif(condition){
 else{
   // code to be executed if Preconditions is not true
 }
+Alternate Syntax
+  if (Condition) :
+    // Block of code 
+  elseif (Condition) :
+    // Block of code 
+  else:
+    // Block of code 
+  endif;
 */
 
 /* -------- Ternary Operator -------- */

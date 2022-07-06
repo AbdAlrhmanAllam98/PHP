@@ -2,7 +2,11 @@
 /* ----------- Arrrays ----------- */
 
 /*
-  If you need to store multiple values from various data types, you can use arrays. Arrays hold "elements"
+  -If you need to store multiple values from various data types, you can use arrays. Arrays hold "elements"
+  -After 2 key=>element  if i put element without key this is element with index zero
+  -if i put key 9 in the start of initalize and add after this key element,this element with index 10
+  - if i put repeated key, the value in the last one is override.
+
 */
 
 // Simple array of numbers

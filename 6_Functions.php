@@ -22,9 +22,9 @@ registerUser('Brad');
 // Adding default values
 function add($num1=5, $num2=5)
 {
-  return $num1 + $num2;
+  return "Sum is". $num1 + $num2;
 }
-$sum = add();
+$sum = add(num2:10); //to Add value to specific argument 
 echo $sum.'<br>';
 
 // Assigning anonymous functions to variables. Often used for closures and callback functions

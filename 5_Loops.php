@@ -7,9 +7,18 @@
   for (initialize; condition; increment) {
   // code to be executed
   }
+  Alternate SYNTAX
+  for(initialize; condition; increment):
+    // code to be executed
+  endfor;
 */
 
 /* ------------ While Loop ------------ */
+/* Alternate SYNTAX
+while (condition) :
+ // code to be executed
+endwhile;
+*/
 $startdate=strtotime("Saturday");
 $enddate=strtotime("+6 weeks", $startdate);
 while ($startdate < $enddate) {
