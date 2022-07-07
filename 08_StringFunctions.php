@@ -1,6 +1,7 @@
 <?php
-/* ---------- String Functions -------- */
-  /*
+/* ------------------------- String Functions -------- */
+// Access Elements in string Negative Index Are Allowed to get the last element in the string   
+/*
     - lcfirst(String[Required]) =>  Make first letter of string is lowercase
     - ucfirst(String[Required]) =>  Make first letter of string is uppercase
     - str_repeat(String[Required], Count[Required])
@@ -84,6 +85,14 @@
         echo 10_000_000;=>Syntactic sugar   10000000 
         echo number_format(10000000.156023, 3, "@", "A");   100A000A00@156
 
+
+    -substr_replace(String[Required], Replace With Or Insert[Required], Start[Required], Length[$])
+        replace the sub of string by other value or Insert instead of Replace
+        length[Positive Number => Length Of String To Be Replaced, $ Negative Number=>Characters Left At The End After Replacement المنطقه دي كلها منطقه محظورة مش هيحصل فيها حاجه
+        ,$ 0=> Insert at this position and No replace done]
+            echo substr_replace("Elzero_Web_School", "A", 7, -3); // Elzero_Aool
+            echo substr_replace("Elzero_Web_School", "A", 7, -10); // Elzero_AWeb_School
+            echo substr_replace("Elzero_Web_School", "@", 1, 0); // E@lzero_Web_School
     */
   
 $string = 'Hello World';

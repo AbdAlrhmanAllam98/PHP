@@ -26,7 +26,7 @@ $cashOnHand = 10.5; //Float
 $hasKids = true; // Boolean
 
 var_dump($cashOnHand);   //float(10.5)
-echo `${name} is ${age} years old  `;  //template literals
+echo "${name} is ${age} years old ";  //like as template literals
 
 echo "$name is $age years old   ";      //double quotes
 

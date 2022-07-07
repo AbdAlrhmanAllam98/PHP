@@ -14,7 +14,25 @@ include_one and require_one -> قبل كده ولا لا عشان لو حصله�
         echo $a . '<br>'; //20
         overrideفقط كان اخر سطر هيرجع 10 لانه هيعمل عليها include هنا لو كنت مستخدم
 */ 
-
+/*
+====================================================================
+========================     Variables    ==========================
+=====================================================================
+ Variable variable
+    Takes The Value Of A Variable And Treats That As The Name Of A Variable
+        $a = "osama";
+        $$a = "elzero"; //$osama
+        $$$a = "school";  //$$osama  // $elzero
+        echo $$a; //$osama; 
+        echo $$$a; //$elzero
+        echo "Hello ${$$a}"; // $$$a
+ Assign Variable By Reference
+    By Default, Variables Are Always Assigned By Value
+    Assigned By Reference Make Variable Alias Or Point To Another[References Are Not Pointers]
+    put (&) before variable in decleare it 
+        $a = "Osama";
+        $b = &$a;   
+*/
 /*
 ======================================================================
 ------------------------------Operators-------------------------------
@@ -70,6 +88,5 @@ Compare Strings
     }finally {
   echo 'First finally ';   // Finally block is executed regardless of whether an exception is thrown or not
 }
-
 */
 ?>
