@@ -3,11 +3,23 @@
 
 /*
   -If you need to store multiple values from various data types, you can use arrays. Arrays hold "elements"
-  -After 2 key=>element  if i put element without key this is element with index zero
+  -After <2 or More> (key=>element) if i put element without key this is element with index zero, on condition key not number if key is number it will in the order
   -if i put key 9 in the start of initalize and add after this key element,this element with index 10
   - if i put repeated key, the value in the last one is override.
 
 */
+
+$arr=[
+  'a'=>'a',
+  'b'=>'b',
+  'c'=>'c',
+  'd'=>'d',
+  'e'=>'e',
+  'f'=>'f',
+];
+
+var_dump(array_change_key_case($arr,CASE_UPPER));
+echo nl2br('\n');
 
 // Simple array of numbers
 $numbers = ['koala', 2, 3, 4, 5];
