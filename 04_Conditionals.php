@@ -28,16 +28,14 @@ $posts = ['fd','fsd'];
   The ternary operator is a shorthand if statement.
     condition ? true : false;
 */
-// The isset() function will generate a warning or e-notice when the variable does not exists. The empty() function will not generate any warning or e-notice.
-// echo !empty($posts[0]) ? $posts[0] : 'There are no posts';
-
+// The isset() function will generate a warning or e-notice when the variable does not exists.
+// The empty() function will not generate any warning or e-notice.
 // Assign a variable based on a condition
 $firstPost = !empty($posts) ? $posts[0] : 'There are no posts';
-// echo $firstPost;
 
-// Null Coalescing Operator ?? (PHP 7.4)
+// Null Coalescing Operator ?? (PHP 7.4 or above)
 $firstPost = $posts[1] ?? null;
-var_dump($firstPost);
+var_dump($firstPost);            
 
 /* -------- Switch Statements ------- */
 $favcolor = 'green';

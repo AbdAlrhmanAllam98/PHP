@@ -9,13 +9,16 @@
 */
 
 $k="HELLO";
-//hyt3rdo gmb b3dehom w msh byt7tlhom parentheses echo and print
-echo 123,'hello',10.45;   //123hello10.45
-print $k;                //HELLO
+//hyt3rdo gmb b3dehom w msh byt7tlhom parentheses echo
+echo 123,'hello',10.45 ."<br>";   //123hello10.45
+print $k."<br>";                //HELLO
 
 print_r([1,3,5]);        //Array ( [0] => 1 [1] => 3 [2] => 5 )
+echo "<br> var_dump <br>";
 var_dump([1,'32',3]);   //array(3) { [0]=> int(1) [1]=> string(2) "32" [2]=> int(3) }
+echo "<br> var_export <br>";
 var_export($k);         //'HELLO'
+echo "<br>";
 
 // Formatted Strings - useful when you have outside data
 // Different specifiers for different data types

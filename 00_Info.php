@@ -2,7 +2,7 @@
 // XAMPP [X->cross platform , A->Apache, M->MYSQL, P->PHP, P->Perl]
 // phpinfo(); => عشان يظهرلي الانفيرومنت بتاعتي فيها ايه 
 //php_uname(); =>info of system if i build app depend on configuration //Windows NT DESKTOP-60L1E6L 10.0 build 19044 (Windows 10) AMD64
-// composer is Tool contain dependencies and libraries
+// composer is Tool contain dependencies and libraries <package manager>
 /*
 include and require are including external files in current file, 
 the difference is if any error exist include show warning and continue the rest of script but require return fatal error
@@ -10,7 +10,7 @@ include_one and require_one -> قبل كده ولا لا عشان لو حصله�
         include_once("test.php"); // $a = 10;
         echo $a . '<br>'; //10
         $a = 20;
-        include_once("test.php"); // $a = 10;
+        ```include_once```("test.php"); // $a = 10;
         echo $a . '<br>'; //20
         overrideفقط كان اخر سطر هيرجع 10 لانه هيعمل عليها include هنا لو كنت مستخدم
 */ 
@@ -46,14 +46,15 @@ include_one and require_one -> قبل كده ولا لا عشان لو حصله�
     $a = 10 || false; // $a = (10 || false) => $a = 1
     $b = 10 or false; // ($b = 10) or false => $b=10
 
-xor => Xor => Only One Is True But Not All
+xor => Xor => Only One Is True But Not All of them are true
     var_dump(100 > 50 xor 100 > 80); //false
 
 Compare Strings  
     "ai" comes before "i" in alphabetical order so -> "ai" is less than "i"
     "ia" comes after "i" alphabetical order so -> "ia" is greater than "i"
 
-@ [Error Control Operator]->   مش هتتنفذ die ان لو القيمه مش موجوده يظهر مكانها كذا واي حاجه هتيجي بعد الorلو هيحصل ايرور اللغي انه يظهر وكمان ممكن عن طريق ال 
+@ [Error Control Operator]   
+مش هتتنفذ die ان لو القيمه مش موجوده يظهر مكانها شئ, اي حاجه هتيجي بعد الorلو هيحصل ايرور اللغي انه يظهر وكمان ممكن عن طريق ال 
     - Variable  
             $a = 10;
             $b = @$a or die("Variable Not Found"); -> if $a not exist die('Variable Not Found') will execute in b
@@ -86,7 +87,7 @@ Compare Strings
     } catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), ' ';
     }finally {
-  echo 'First finally ';   // Finally block is executed regardless of whether an exception is thrown or not
+        echo 'First finally ';   // Finally block is executed regardless of whether an exception is thrown or not
 }
 */
 ?>

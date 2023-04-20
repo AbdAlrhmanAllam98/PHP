@@ -72,10 +72,10 @@ echo $multiply(5, 5).'<br>';
 
 //Lambda Function
 function operation($num,$logic){
-    $logic($num);
+    return $logic($num);
 }
 echo operation(10,function($data){
-    $data*$data;
+    return $data*$data . "<br>";
 });
 
 // PHP Variadic Functions

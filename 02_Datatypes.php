@@ -41,7 +41,7 @@ echo <<<"navlinks"
 navlinks;
 
 // Nowdoc to Escaping 
-echo <<<'Now'
+echo <<<"Now"
 Hello PHP
 Special Characters $$$ ' ' ' """"" \\\\
 Hello My Name Is $name
@@ -50,7 +50,8 @@ Now;
 //CONST  => are never going to change
 define('HOST','LOCALHOST');
 echo HOST.'<br>';   //LOCALHOST
-echo DEFAULT_INCLUDE_PATH;
+echo __LINE__ ;
+echo PHP_OS_FAMILY;
 /*
 Pre-Defined Constants [Case Sensitive]
 - PHP_VERSION 
