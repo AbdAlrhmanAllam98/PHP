@@ -44,8 +44,9 @@ navlinks;
 echo <<<"Now"
 Hello PHP
 Special Characters $$$ ' ' ' """"" \\\\
-Hello My Name Is $name
 Now;
+// Heredoc strings are like double-quoted strings without escaping.
+// Nowdoc strings are like single-quoted strings without escaping, it doesn’t expand the variables
 
 //CONST  => are never going to change
 define('HOST','LOCALHOST');
