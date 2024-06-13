@@ -5,8 +5,8 @@
 // composer is Tool contain dependencies and libraries <package manager>
 /*
 include and require are including external files in current file, 
-the difference is if any error exist include show warning and continue the rest of script but require return fatal error
-include_one and require_one -> قبل كده ولا لا عشان لو حصلها قبل كده مش هيحصل تانيincludeقبل ما بيعمل اي حاجه بيشوف الاول هي حصلها  
+the difference is if any error exist `include` will show warning and continue the rest of script but `require` will return fatal error
+include_one and require_one -> قبل كده ولا لا عشان لو حصلها قبل كده مش هيحصل تاني include قبل ما بيعمل اي حاجه بيشوف الاول هي حصلها  
         include_once("test.php"); // $a = 10;
         echo $a . '<br>'; //10
         $a = 20;
@@ -35,16 +35,16 @@ include_one and require_one -> قبل كده ولا لا عشان لو حصله�
 */
 /*
 ======================================================================
-------------------------------Operators-------------------------------
+--------------------------- Operators ----------------------------
 ======================================================================
- <=> [Spaceship] is comparison operator if less than will -1 , equal 0 or greater than will 1 
+ <=> [Spaceship] is comparison operator if less than will -1, equal 0 or greater than will 1 
     var_dump(100<=>200)  int(-1) ,var_dump(100<=>100)  int(0) ,var_dump(100<=>50)  int(1)
 
-&&  => And => Two Are True ["&&" Has A Greater Precedence Than "and"]
-||  => Or  => One Or Both Is True ["||" Has A Greater Precedence Than "or"]
+&& (AND) => Two Are True ["&&" Has A Greater Precedence Than "and"]
+|| (OR)  => One Or Both Is True ["||" Has A Greater Precedence Than "or"]
     echo 10 || false || 0 || [] || ""; // True => 1
     $a = 10 || false; // $a = (10 || false) => $a = 1
-    $b = 10 or false; // ($b = 10) or false => $b=10
+    $b = 10 or false; // ($b = 10) or false => $b = 10
 
 xor => Xor => Only One Is True But Not All of them are true
     var_dump(100 > 50 xor 100 > 80); //false
@@ -54,7 +54,7 @@ Compare Strings
     "ia" comes after "i" alphabetical order so -> "ia" is greater than "i"
 
 @ [Error Control Operator]   
-مش هتتنفذ die ان لو القيمه مش موجوده يظهر مكانها شئ, اي حاجه هتيجي بعد الorلو هيحصل ايرور اللغي انه يظهر وكمان ممكن عن طريق ال 
+مش هتتنفذ die ان لو القيمه مش موجوده يظهر مكانها شئ, اي حاجه هتيجي بعد ال or لو هيحصل ايرور اللغي انه يظهر وكمان ممكن عن طريق ال 
     - Variable  
             $a = 10;
             $b = @$a or die("Variable Not Found"); -> if $a not exist die('Variable Not Found') will execute in b
